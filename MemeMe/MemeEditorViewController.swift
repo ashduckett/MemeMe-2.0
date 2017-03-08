@@ -34,6 +34,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         activityController.completionWithItemsHandler = {(activity, completed, items, error) in
             if completed {
                 self.save()
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }
