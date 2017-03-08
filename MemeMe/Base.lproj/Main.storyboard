@@ -311,29 +311,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-kh-nyR">
-                                <rect key="frame" x="16" y="248" width="343" height="171"/>
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z67-aC-XOC">
-                                <rect key="frame" x="166" y="427" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aXC-kh-nyR" firstAttribute="leading" secondItem="jwM-Fd-GyR" secondAttribute="leadingMargin" id="Aoe-X9-CTe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="z67-aC-XOC" secondAttribute="trailing" constant="151" id="L0G-5u-4OI"/>
-                            <constraint firstItem="z67-aC-XOC" firstAttribute="leading" secondItem="jwM-Fd-GyR" secondAttribute="leadingMargin" constant="150" id="OYR-q7-mvO"/>
-                            <constraint firstItem="4t2-vv-e5G" firstAttribute="top" secondItem="aXC-kh-nyR" secondAttribute="bottom" constant="248" id="PEf-w6-c6K"/>
-                            <constraint firstItem="z67-aC-XOC" firstAttribute="top" secondItem="aXC-kh-nyR" secondAttribute="bottom" constant="8" id="hGF-ay-RLx"/>
+                            <constraint firstItem="4t2-vv-e5G" firstAttribute="top" secondItem="aXC-kh-nyR" secondAttribute="bottom" id="PEf-w6-c6K"/>
                             <constraint firstItem="aXC-kh-nyR" firstAttribute="trailing" secondItem="jwM-Fd-GyR" secondAttribute="trailingMargin" id="w9Q-wC-YQU"/>
-                            <constraint firstItem="aXC-kh-nyR" firstAttribute="top" secondItem="Gg5-au-eP6" secondAttribute="bottom" constant="228" id="wPp-Qm-aUG"/>
+                            <constraint firstItem="aXC-kh-nyR" firstAttribute="top" secondItem="Gg5-au-eP6" secondAttribute="bottom" id="wPp-Qm-aUG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="image" destination="aXC-kh-nyR" id="Hm8-Zl-zvh"/>
-                        <outlet property="label" destination="z67-aC-XOC" id="0HN-2B-f0H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSw-Hg-AY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
