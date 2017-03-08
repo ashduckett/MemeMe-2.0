@@ -156,15 +156,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pxi-DV-CrF">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="119" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pxi-DV-CrF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MemeTableCell" rowHeight="105" id="cpe-Tc-jdd" customClass="MemeTableCell" customModule="MemeMe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="105"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MemeTableCell" rowHeight="119" id="cpe-Tc-jdd" customClass="MemeTableCell" customModule="MemeMe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="cpe-Tc-jdd" id="0xO-2b-QS3">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l9T-ze-jng">
@@ -201,8 +201,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pxi-DV-CrF" firstAttribute="top" secondItem="IxJ-Fr-1Xx" secondAttribute="bottom" id="6bJ-Wx-SwL"/>
                             <constraint firstAttribute="trailing" secondItem="Pxi-DV-CrF" secondAttribute="trailing" id="CjM-Hs-jSJ"/>
+                            <constraint firstItem="Pxi-DV-CrF" firstAttribute="top" secondItem="IxJ-Fr-1Xx" secondAttribute="bottom" constant="-44" id="MkL-8X-Mo4"/>
                             <constraint firstItem="0f1-qL-KV7" firstAttribute="top" secondItem="Pxi-DV-CrF" secondAttribute="bottom" id="PaW-Ik-7RK"/>
                             <constraint firstItem="Pxi-DV-CrF" firstAttribute="leading" secondItem="Po1-4x-7p2" secondAttribute="leading" id="pxV-U3-GAU"/>
                         </constraints>
@@ -214,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAC-Dd-Qtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1638" y="-375"/>
+            <point key="canvasLocation" x="1637.5999999999999" y="-375.56221889055473"/>
         </scene>
         <!--Grid View-->
         <scene sceneID="s3m-hh-jHc">
@@ -263,7 +263,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97C-rm-eSq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
