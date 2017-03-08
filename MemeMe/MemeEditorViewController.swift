@@ -32,22 +32,19 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         present(activityController, animated: true, completion: nil)
         
         activityController.completionWithItemsHandler = {(activity, completed, items, error) in
-        
-            // Doesn't seem to need help from me to do this. Will leave here since it might be needed later
-            // Otherwise you end up with two saved versions when you do a save from the activity view.
-        
             if completed {
                 self.save()
             }
         }
     }
     
-    // The forums say that saving will be complete in v2.0?
     func save() {
         let memedImage = generateMemedImage()
         
         let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imagePickerView.image!, memedImage: memedImage)
         
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.memes.append(meme)
     }
     
     func toggleToolAndNavBarVisibility() {
@@ -56,6 +53,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     func generateMemedImage() -> UIImage {
+        // Hide the toolbar and the navbar so they don't show up in the meme
         toggleToolAndNavBarVisibility()
         
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -63,24 +61,18 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         let memedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
+        // Show the toolbar and navbar so they can be used as normal
         toggleToolAndNavBarVisibility()
+        
         
         return memedImage
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //topTextField.delegate = self
-        //bottomTextField.delegate = self
-        
         shareMemeButton.isEnabled = false
-        
         configureTextFields(textField: topTextField)
         configureTextFields(textField: bottomTextField)
-        
-        
-     
     }
     
     func getTextAttributes() -> [String:Any] {

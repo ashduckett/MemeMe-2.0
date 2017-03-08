@@ -12,14 +12,13 @@ import UIKit
 class MemeSelectorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("View Loaded")
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(addNewMeme))
+        self.navigationItem.title = "Sent Memes"
     }
     
     func addNewMeme() {
         var controller: MemeEditorViewController
         controller = self.storyboard?.instantiateViewController(withIdentifier: "MemeEditor") as! MemeEditorViewController
-        
         self.present(controller, animated: true, completion: nil)
     }
 }
